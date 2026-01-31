@@ -1,0 +1,9 @@
+{
+    "API_GET_BOOKING_IDS_JSON_ENDPOINT" : "/booking",
+    "API_POST_CREATE_TOKEN_JSON_ENDPOINT" : "/auth",
+    "API_POST_CREATE_BOOKING_JSON_ENDPOINT" : "/booking",
+    "API_GET_BOOKING_JSON_ENDPOINT" : "/booking/",
+    "API_PUT_UPDATE_BOOKING_JSON_ENDPOINT" : "/booking/",
+    "API_DELETE_BOOKING_JSON_ENDPOINT" : "booking/"
+
+}
