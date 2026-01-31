@@ -60,7 +60,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run E2E tests
-        run: npx playwright test tests/specs/E2E
+        run: npx playwright test tests/specs/E2E --workers=1
         env:
           NODE_ENV: qa
 
