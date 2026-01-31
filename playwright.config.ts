@@ -30,7 +30,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,              
+    headless: !!process.env.CI,              
     trace: 'on-first-retry',
     baseURL: process.env.BASE_URL_APIS || 'https://restful-booker.herokuapp.com',
   },
