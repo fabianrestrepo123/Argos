@@ -33,3 +33,35 @@ test("Compra de un producto exitosa", async ({ page }) => {
   })
   await carrito.validarCompraExitosa(precioDetalle);
 });
+
+test("Compra exitosa del monitor mas caro", async ({ page }) => {
+  const inicio = new InicioPage(page);
+  const productos = new ProductosPage(page);
+  const carrito = new CarritoPage(page);
+
+  await inicio.abrirDemoBlaze();
+
+  await inicio.seleccionarCategoria("Monitors");
+  await inicio.irADetalleProducto("Apple monitor 24");
+
+  await productos.validarProductoVisible("Apple monitor 24");
+
+  const precio = await productos.obtenerPrecioProducto();
+  await productos.agregarAlCarrito();
+
+  await productos.irAlCarrito();
+  await carrito.validarPrecioProducto("Apple monitor 24", precio);
+
+  await carrito.abrirModalCompra();
+  await carrito.llenarFormularioCompra({
+    nombre: "VIP User",
+    pais: "Colombia",
+    ciudad: "Medellín",
+    tarjeta: "4111111111111111",
+    mes: "12",
+    año: "2030",
+  });
+
+
+
+});

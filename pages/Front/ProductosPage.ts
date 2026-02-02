@@ -11,14 +11,13 @@ export class ProductosPage {
     await expect(this.page.getByRole('heading', { name: nombre })).toBeVisible();
   }
   
-  async agregarAlCarrito() {
+  async agregarAlCarrito(): Promise<void> {
     await this.page.getByRole('link', { name: 'Add to cart' }).click();
-    
   }
+  
 
   async irAlCarrito() {
     await this.page.getByRole('link', { name: 'Cart' }).nth(0).click();
-    await this.page.on('dialog', dialog => dialog.accept());
   }
 
   async obtenerPrecioProducto(): Promise<number> {
