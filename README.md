@@ -29,7 +29,7 @@ La solución fue desarrollada pensando en mantenibilidad, escalabilidad y fácil
   
 ## Clonar repositorio
 - git clone https://github.com/fabianrestrepo123/Argos.git
-- 
+  
 ## Instalar dependencias
 - npm install
  Instalar los navegadores requeridos por Playwright para la automatizacion
