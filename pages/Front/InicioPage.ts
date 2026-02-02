@@ -21,9 +21,13 @@ export class InicioPage {
   }
 
   async irADetalleProducto(nombre: string): Promise<void> {
+    
+    await expect(
+      this.page.getByRole('link', { name: nombre })
+    ).toBeEnabled();
 
     await this.page.getByRole('link', { name: nombre }).click();
-    await this.page
+    
   }
 
   

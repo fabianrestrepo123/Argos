@@ -10,6 +10,7 @@ test("Persistencia del carrito con múltiples productos y recarga", async ({ pag
 
   await inicio.abrirDemoBlaze();
   await inicio.seleccionarCategoria("Monitors");
+  
   await inicio.irADetalleProducto("Apple monitor 24");
   await productos.validarProductoVisible("Apple monitor 24");
   const precioDetalleMonitores = await productos.obtenerPrecioProducto();
