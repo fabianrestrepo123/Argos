@@ -41,9 +41,9 @@ La solución fue desarrollada pensando en mantenibilidad, escalabilidad y fácil
 - npx playwright test tests/specs/E2E
 Para ejectuar los spect de forma indivudal, dejo el ejemploo :
 - npx playwright test tests/specs/E2E/CarritoPersistencia.spec.ts
-# Para ejectuar todas la suites
+## Para ejectuar todas la suites
 - npx playwright test tests/specs/E2E/CarritoPersistencia.spec.ts
-# Despues de cada ejecucion en Playwright este genera un reporte HTML, para abrirlo colocamos el siguiente comando:
+## Despues de cada ejecucion en Playwright este genera un reporte HTML, para abrirlo colocamos el siguiente comando:
 -npx playwright show-report
 
 
