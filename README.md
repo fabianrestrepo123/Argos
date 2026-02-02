@@ -8,6 +8,8 @@ El objetivo principal es detectar fallos de forma temprana (shift-left testing),
 
 La solución fue desarrollada pensando en mantenibilidad, escalabilidad y fácil integración en CI/CD, siguiendo buenas prácticas de automatización.
 
+En la rama main se encuentra alojado todo el codigo.
+
 ---
 
 ##  Tecnologías utilizadas
